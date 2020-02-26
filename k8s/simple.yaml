@@ -19,7 +19,7 @@ metadata:
     run: <name>
   name: <name>
 spec:
-  replicas: 20
+  replicas: 3
   selector:
     matchLabels:
       run: <name>
