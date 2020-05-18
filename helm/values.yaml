@@ -1,0 +1,9 @@
+# Default values for app.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+registry: docker.io
+
+image:
+  repository: nginx
+  tag: latest
