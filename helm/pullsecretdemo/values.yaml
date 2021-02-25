@@ -1,0 +1,10 @@
+image:
+  registry: cadullc.azurecr.io
+  repository: myapp
+  tag: latest
+
+# see https://helm.sh/docs/howto/charts_tips_and_tricks/ (section "Creating Image Pull Secrets")
+pullSecret:
+  registry: cadullc.azurecr.io
+  username: cadullc
+  password: sillyness

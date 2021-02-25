@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: myapp
+  name: myapp
+spec:
+  containers:
+  - image: {{ .Values.image.registry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}
+    name: myapp
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+  imagePullSecrets:
+  - name: mypullsecret
